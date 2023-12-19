@@ -1,0 +1,35 @@
+h1{
+    color: black;
+    font-weight: bold;
+}
+form{
+    font-weight: bold;
+
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./img/gatag-00004501.jpg");
+    /* 画像を上下左右中心に */
+    background-position: center center;
+    /* 画像をタイル状にしない */
+    background-repeat:  no-repeat;
+    /* コンテンツの高さが画像の高さより高いとき動かさないよう固定 */
+    /* background-attachment: fixed; */
+    /* 表示するコンテナの大きさに合わせて背景画像を調整 */
+    background-size: cover;
+}
+.wrapper {
+    text-align: center;
+    background-color:rgba(255,255, 255, 0.9);
+    width: 50vh;
+    background-position: center center;
+}
+
+.ng{
+    color :red
+}

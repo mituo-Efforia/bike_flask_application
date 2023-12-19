@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Motorbike_Cost_Regressor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>バイク価格予測アプリ</h1>
+
+        {% for message in form.modelyear.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.mileage.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.guarantee_period.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.displacement.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+        
+        {% for message in form.color.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.b_type.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+
+        {% for message in form.brand.errors %}
+            <div class="ng">{{ message }}</div>
+        {% endfor %}
+
+        <form method="post" target='_blank'>
+            {{ form.modelyear.label }}<br>
+            {{ form.modelyear }}
+            <br>
+            <br>
+            {{ form.mileage.label }}<br>
+            {{ form.mileage }}
+            <br>
+            <br>
+            {{ form.guarantee_period.label }}<br>
+            {{ form.guarantee_period }}
+            <br>
+            <br>
+            {{ form.displacement.label }}<br>
+            {{ form.displacement }}
+            <br>
+            <br>
+            {{ form.color.label }}<br>
+            {{ form.color }}
+            <br>
+            <br>
+            {{ form.brand.label }}<br>
+            {{ form.brand }}
+            <br>
+            <br>
+            {{ form.b_type.label }}<br>
+            {{ form.b_type }}
+            <br>
+            <br>
+
+            <div style="font-size: 16px;">{{ form.submit }}</div>
+        </form>
+    </div>
+</body>

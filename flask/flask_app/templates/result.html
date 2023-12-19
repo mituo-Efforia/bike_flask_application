@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Motorbike_Cost_Regressor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>予測結果</h1>
+        <h1>{{ pred_man }}万 {{ pred_yen }}円</h1>
+        <h3>入力内容</h3>
+        <p>モデル年: {{ modelyear }}年 </p>
+        <p>走行距離: {{ mileage }}km </p>
+        <p>排気量: {{ displacement }}cc </p>
+        <p>色: {{ color_name }} </p>
+        <p>メーカー: {{ brand_name }} </p>
+        <p>タイプ: {{ b_type_name }}</p>
+        <p>保証期間: {{ guarantee_period }}年</p>
+        <a href="./">トップに戻る</a>
+    </div>
+</body>
+
